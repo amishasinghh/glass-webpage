@@ -1,0 +1,215 @@
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'poppins'
+}
+
+main{
+	height: 100vh;
+	background-image: linear-gradient(to right top,#ffcb91,#ffefa1);
+	/*centre the content on page*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.glass{
+	height: 80vh;
+	width: 60%;
+	background-image: linear-gradient(to right bottom, rgba(255,255,255,.6),rgba(255,255,255,.1));
+	border-radius: 20px;
+	z-index: 5;
+	backdrop-filter:blur(5px); /*Blur only the content inside the element*/
+	display: flex;
+}
+
+.circ1, .circ2{
+		background-image: linear-gradient(to right bottom, rgba(255,255,255,.9),rgba(255,255,255,.2));
+		height: 120px;
+		width:120px;
+		border-radius:60px;
+		position:absolute;
+}
+
+.circ1{
+	top: 3%;
+	right: 18%;
+}
+
+.circ2{
+	bottom: 5%;
+	left: 15%;
+}
+
+div.user img{
+	width: 30%;
+	border-radius: 50%;
+	margin-top: 15%;
+	margin-bottom: 0;
+}
+
+.user p{
+	margin: 2px;
+}
+
+div.card img{
+	width: 25%;
+	border-radius: 15px;
+	margin-right: 10px;
+}
+
+aside{
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+
+	/*not a waste of code, but FLEX is needed to add justify and align to centre content*/ 
+	align-items: center;
+	justify-content: space-evenly;
+
+	text-align: center;
+	background-image: linear-gradient(to right bottom, rgba(255,255,255,.6),rgba(255,255,255,.1));
+	border-radius: 20px;
+	box-sizing: border-box;
+}
+
+.links{
+	display: flex;
+	flex-direction: column;
+}
+
+.links img{
+	height: 30px;
+	width: 30px;
+}
+
+.name{
+	opacity: .8;
+	font-size: 120%;
+	font-weight: bold;
+}
+
+.link{
+	margin: 10px 0;
+	display: flex;
+	align-items: center;
+}
+
+a{
+	padding: 5%;
+	text-decoration: none;
+	color: #705712;
+	font-weight: bold;
+	opacity: .8;
+}
+
+.pro{
+	background-image: linear-gradient(to right top,#ffcb91,#ffefa1);
+	border-radius: 25px;
+	padding: 2px;
+	position: relative;
+	height: 10%;
+	margin-bottom: 5%;
+	width: 80%;
+}
+
+.pro img{
+	height: 80%;
+	position: absolute;
+	top: 15%;
+	right: 4%;
+}
+
+.pro p{
+	margin: 0 7%;
+	font-size: 100%;
+	width: 60%;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.games{
+	width: 60%;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	margin-left: 3%;
+}
+
+.card{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+	margin-right: 5px;
+	background-image: linear-gradient(to left top, rgba(255,255,255,1),rgba(255,255,255,.4));
+	border-radius: 15px;
+	padding: 8px;
+	box-shadow: 5px 5px 10px #c1beb7a8;
+}
+
+.card h2, .card progress{
+	color: #705712;
+}
+
+h1{
+	font-size: 200%;
+	font-weight: bolder;
+	opacity: .8;
+}
+
+.card h2{
+	opacity: .8;
+	font-size: 120%;
+	margin: 0;
+}
+
+.card p{
+	font-size: 80%;
+	margin-top: 1%;
+}
+
+.status h1{
+	margin:0;
+}
+
+.status input{
+	margin-bottom: 10px;
+	border-radius: 10px;
+	border: 1px solid #ffcb91;
+	width: 50%;
+	linear-gradient(to right bottom, rgba(255,255,255,.6),rgba(255,255,255,.1));
+}
+
+/*PROGRESS BAR*/
+.progress{
+	width: 100%;
+	height: 3vh;
+	background: #ffcb91;
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.progress::after{
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 32%;
+	background: #f3eccf;
+}
+
+.card-info{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.percent{
+	background-image: linear-gradient(to right top,#bf6400,#cd8314);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
